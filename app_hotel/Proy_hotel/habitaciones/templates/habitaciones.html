@@ -1,35 +1,45 @@
-{% load static %}
-<!DOCTYPE html>
-<html lang="es">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Título de la página</title>
-        <link rel="stylesheet" href="styles.css">
-        <script src="script.js"></script>
-    </head>
-    <body>
-        <header>
-            <nav>
-                <ul>
-                    <li><a href="#">Inicio</a></li>
-                    <li><a href="#">Acerca de</a></li>
-                    <li><a href="#">Contacto</a></li>
-                </ul>
-            </nav>
-        </header>
-        <main>
-            <section>
-                <h1>Mi primer encabezado</h1>
-                <p>Mi primer párrafo.</p>
-            </section>
-            <section>
-                <h2>Mi segundo encabezado</h2>
-                <p>Mi segundo párrafo.</p>
-            </section>
-        </main>
-        <footer>
-            <p>Derechos reservados, 2024</p>
-        </footer>
-    </body>
-</html>
+{% extends "base.html" %}
+
+{% block title %}
+Mi Página
+{% endblock %}
+
+{% block content %}
+<main role="main">
+    
+    <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide-to="0" class="active" aria-label="Slide 1" aria-current="true"></button>
+            <button type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide-to="1" aria-label="Slide 2" class=""></button>
+            <button type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide-to="2" aria-label="Slide 3"></button>
+          </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="..." class="d-block w-100" alt="...">
+            <h2> holaaaaaaaaaaa </h2>
+          </div>
+          <div class="carousel-item">
+           
+            <h2> holaaaaawsdsadasdsaaaaaaa </h2>
+          </div>
+          <div class="carousel-item">
+            
+            <h2> holaaaaaaaaaaa sdsasssssssssssssssssssss</h2>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+  </div><!-- /.container -->
+{% endblock %}
+
+
+
+        
+  
