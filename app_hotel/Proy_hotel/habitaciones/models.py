@@ -4,8 +4,14 @@ from ckeditor.fields import RichTextField
 
 class Habitacion(models.Model):
     numero = models.IntegerField()
-    tipo = models.CharField(max_length=200)
+    TIPO_CHOICES = [
+        ('baja', 'Gama Baja'),
+        ('media', 'Gama Media'),
+        ('alta', 'Gama Alta'),
+    ]
+    tipo = models.CharField(max_length=10, choices=TIPO_CHOICES)
     ocupada = models.BooleanField(default=False)
+
     
     class Meta:
         db_table = 'Habitacion'

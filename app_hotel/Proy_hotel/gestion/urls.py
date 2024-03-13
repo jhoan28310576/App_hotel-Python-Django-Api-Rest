@@ -2,6 +2,6 @@ from django.urls import path
 from gestion import views
 
 urlpatterns = [
-    path('', views.inicio, name='gestion'),
+    path('estadisticas/', views.obtener_estadisticas_habitaciones, name='estadisticas_habitaciones'),
     
 ]
