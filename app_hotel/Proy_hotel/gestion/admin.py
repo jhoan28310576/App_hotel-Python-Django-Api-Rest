@@ -41,8 +41,8 @@ class ClienteAdmin(admin.ModelAdmin):
     list_filter=('nombre',)
     
 class ReservaAdmin(admin.ModelAdmin):
-    list_display =('cliente', 'habitacion', 'fecha_inicio', 'fecha_fin',)
-    search_fields =('cliente', 'habitacion', 'fecha_inicio', 'fecha_fin',)
+    list_display =('cliente', 'habitacion', 'fecha_inicio', 'fecha_fin', 'pagada',)
+    search_fields =('cliente', 'habitacion', 'fecha_inicio', 'fecha_fin', 'pagada',)
     list_filter=('fecha_inicio',)
     
 class PagoAdmin(admin.ModelAdmin):

@@ -45,6 +45,7 @@ class Reserva(models.Model):
     habitacion = models.ForeignKey(Habitacion, on_delete=models.CASCADE)
     fecha_inicio = models.DateField()
     fecha_fin = models.DateField()
+    pagada = models.BooleanField(default=False)
     
     class Meta:
         db_table = 'Reserva'
